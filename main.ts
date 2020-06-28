@@ -8,15 +8,17 @@ input.onButtonPressed(Button.A, function () {
         tinkercademy.LED(DigitalPin.P1, OnOff.On)
         basic.pause(1000)
         tinkercademy.LED(DigitalPin.P1, OnOff.Off)
+        basic.pause(1000)
     }
 })
 input.onButtonPressed(Button.B, function () {
     pins.servoWritePin(AnalogPin.P0, 0)
     temp = 1
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 2; index++) {
         tinkercademy.LED(DigitalPin.P1, OnOff.On)
         basic.pause(1000)
         tinkercademy.LED(DigitalPin.P1, OnOff.Off)
+        basic.pause(1000)
     }
 })
 basic.forever(function () {
