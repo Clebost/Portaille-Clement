@@ -3,7 +3,9 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*"
+        "radio": "*",
+        "i2cLCD1602": "github:makecode-extensions/i2clcd1602#v1.5.0",
+        "MakerBit-LCD1602": "github:1010technologies/pxt-makerbit-lcd1602#v1.4.1"
     },
     "files": [
         "main.blocks",
