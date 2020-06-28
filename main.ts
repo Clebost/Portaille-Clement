@@ -3,18 +3,18 @@ input.onButtonPressed(Button.A, function () {
     temp = 0
     pins.servoSetPulse(AnalogPin.P0, 1500)
     while (temp == 0) {
-        tinkercademy.LED(DigitalPin.P0, OnOff.On)
+        tinkercademy.LED(DigitalPin.P1, OnOff.On)
         basic.pause(1000)
-        tinkercademy.LED(DigitalPin.P0, OnOff.Off)
+        tinkercademy.LED(DigitalPin.P1, OnOff.Off)
     }
 })
 input.onButtonPressed(Button.B, function () {
     pins.servoSetPulse(AnalogPin.P0, -1500)
     temp = 1
     for (let index = 0; index < 4; index++) {
-        tinkercademy.LED(DigitalPin.P0, OnOff.On)
+        tinkercademy.LED(DigitalPin.P1, OnOff.On)
         basic.pause(1000)
-        tinkercademy.LED(DigitalPin.P0, OnOff.Off)
+        tinkercademy.LED(DigitalPin.P1, OnOff.Off)
     }
 })
 basic.forever(function () {
