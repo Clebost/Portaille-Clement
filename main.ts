@@ -21,8 +21,3 @@ input.onButtonPressed(Button.B, function () {
         basic.pause(1000)
     }
 })
-basic.forever(function () {
-    if (true) {
-    	
-    }
-})
